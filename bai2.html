@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let array = []
+    let x
+    tryRemoveFromArray(array,x)
+    function tryRemoveFromArray(arr,b) {
+        let array2 =[]
+        let flag = false
+        for (let i=0;i<arr.length;i++) {
+            if (b == arr[i]){
+                return  arr.splice(i,1)
+            }else{
+                flag = true
+            }
+        }
+        if (flag==true){
+            return arr
+        }
+    }
+    console.log(tryRemoveFromArray(array,x))
+</script>
